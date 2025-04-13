@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>Owais</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+
+    header, nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #f0a;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ffda44;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #f0a, 0 0 20px #f0a; }
+      to   { text-shadow: 0 0 20px #ff0, 0 0 30px #ff0; }
+    }
+
+    .juice {
+      width: 150px;
+      display: block;
+      margin: 2rem auto;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-10px); }
+    }
+
+    
+    .fruit {
+      position: fixed;
+      font-size: 1.5rem;
+      animation: floaty 10s infinite linear;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    @keyframes floaty {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .fruit:nth-child(odd)  { animation-duration: 8s; }
+    .fruit:nth-child(even) { animation-duration: 12s; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my terrible Website 🍹</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <p>Hello! I'm Owais, a student and game developer. I like making weird shit</p>
+  <img src="https://cdn-icons-png.flaticon.com/512/3523/3523063.png" />
+  <p>this img is pretty funny lol and it bounces too! i still dont really understand how that works</p>
+
+
+  <div class="fruit" style="left:10%;">🍓</div>
+  <div class="fruit" style="left:30%;">🍊</div>
+  <div class="fruit" style="left:50%;">🍍</div>
+  <div class="fruit" style="left:70%;">🍉</div>
+  <div class="fruit" style="left:90%;">🍋</div>
+</body>
+</html>
